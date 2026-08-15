@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSoup - Vị Ngọt Từ Thiên Nhiên | Súp Rau Củ Tươi Sạch</title>
+    <meta name="description" content="GreenSoup mang đến những bát súp xanh mát lành, được nấu từ rau củ tươi ngon, mang đến sức khỏe và năng lượng tích cực cho mỗi ngày.">
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-area" id="logo-link">
+                <img src="images/logo.png" alt="GreenSoup Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Green Soup</span>
+                    <span class="logo-tagline">Vị ngọt từ thiên nhiên</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav" id="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+                    <li><a href="#combos" class="nav-link">Combo & Ưu đãi</a></li>
+                    <li><a href="#news" class="nav-link">Tin tức</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="tel:0901234567" class="phone-btn" id="phone-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0901 234 567</span>
+                </a>
+                <div class="cart-btn" id="cart-trigger" role="button" aria-label="Giỏ hàng">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">2</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Green Soup
+                        <span class="hero-subtitle">VỊ NGỌT TỪ THIÊN NHIÊN</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Những bát súp xanh mát lành, được nấu từ rau củ tươi ngon, mang đến sức khỏe và năng lượng tích cực cho mỗi ngày.
+                    </p>
+                    
+                    <a href="#products" class="btn btn-primary btn-explore" id="explore-btn">
+                        <i class="fa-solid fa-leaf"></i> Khám phá ngay
+                    </a>
+                    
+                    <div class="hero-badges">
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-check"></i></span>
+                            <div class="badge-info">
+                                <strong>100%</strong>
+                                <span>Tự nhiên</span>
+                            </div>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <div class="badge-info">
+                                <strong>Không chất</strong>
+                                <span>bảo quản</span>
+                            </div>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon"><i class="fa-solid fa-heart"></i></span>
+                            <div class="badge-info">
+                                <strong>Tốt cho</strong>
+                                <span>sức khỏe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg-glow"></div>
+                    <img src="images/hero_soup.png" alt="Green Soup Bowl" class="hero-soup-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS & ATTRIBUTES -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-decor-leaf">🌿</span>
+                    <h2 class="section-title">Sản phẩm nổi bật</h2>
+                    <span class="section-decor-leaf">🌿</span>
+                </div>
+                
+                <div class="products-grid-layout">
+                    <!-- Left: Product List -->
+                    <div class="products-list-wrapper">
+                        <div class="products-grid">
+                            <!-- Product 1 -->
+                            <div class="product-card" data-id="1">
+                                <div class="product-img-holder">
+                                    <img src="images/hero_soup.png" alt="Súp Rau Xanh">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">Súp Rau Xanh</h3>
+                                    <p class="product-ingredients">Rau bina, bông cải xanh, đậu hà lan</p>
+                                    <div class="product-footer">
+                                        <span class="product-price">35.000đ</span>
+                                        <button class="add-to-cart-btn" aria-label="Thêm Súp Rau Xanh vào giỏ hàng">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Product 2 -->
+                            <div class="product-card" data-id="2">
+                                <div class="product-img-holder">
+                                    <img src="images/pumpkin_soup.png" alt="Súp Bí Đỏ">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">Súp Bí Đỏ</h3>
+                                    <p class="product-ingredients">Bí đỏ, cà rốt, khoai tây và kem tươi</p>
+                                    <div class="product-footer">
+                                        <span class="product-price">35.000đ</span>
+                                        <button class="add-to-cart-btn" aria-label="Thêm Súp Bí Đỏ vào giỏ hàng">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Product 3 -->
+                            <div class="product-card" data-id="3">
+                                <div class="product-img-holder">
+                                    <img src="images/hero_soup.png" alt="Súp Bông Cải">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">Súp Bông Cải</h3>
+                                    <p class="product-ingredients">Bông cải xanh, cải bó xôi, hạt óc chó</p>
+                                    <div class="product-footer">
+                                        <span class="product-price">35.000đ</span>
+                                        <button class="add-to-cart-btn" aria-label="Thêm Súp Bông Cải vào giỏ hàng">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Product 4 -->
+                            <div class="product-card" data-id="4">
+                                <div class="product-img-holder">
+                                    <img src="images/mushroom_soup.png" alt="Súp Nấm Kem">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">Súp Nấm Kem</h3>
+                                    <p class="product-ingredients">Nấm tươi, khoai tây, kem tươi</p>
+                                    <div class="product-footer">
+                                        <span class="product-price">35.000đ</span>
+                                        <button class="add-to-cart-btn" aria-label="Thêm Súp Nấm Kem vào giỏ hàng">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Features Side Block -->
+                    <div class="features-sidebar">
+                        <div class="feature-sidebar-card">
+                            <div class="sidebar-icon-box">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div class="sidebar-info">
+                                <h4>Nguyên liệu tươi sạch</h4>
+                                <p>Chọn lọc kỹ lưỡng từ nông trại</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-sidebar-card">
+                            <div class="sidebar-icon-box">
+                                <i class="fa-solid fa-fire-burner"></i>
+                            </div>
+                            <div class="sidebar-info">
+                                <h4>Nấu mỗi ngày</h4>
+                                <p>Không để qua đêm - luôn tươi ngon</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-sidebar-card">
+                            <div class="sidebar-icon-box">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div class="sidebar-info">
+                                <h4>Dinh dưỡng & Lành mạnh</h4>
+                                <p>Tốt cho sức khỏe mọi lứa tuổi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US & ABOUT US (FOOTER BANNER AREA) -->
+        <section class="why-and-about-section">
+            <div class="why-about-grid">
+                <!-- Left Banner: Why Choose Us -->
+                <div class="why-choose-banner" id="why-choose">
+                    <h3 class="why-title">Vì sao chọn GreenSoup?</h3>
+                    <div class="why-divider"></div>
+                    
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <h5>Tự nhiên</h5>
+                            <p>Không chất bảo quản, không hương liệu</p>
+                        </div>
+                        
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h5>Lành mạnh</h5>
+                            <p>Giàu vitamin, chất xơ, ít calo</p>
+                        </div>
+                        
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <h5>An toàn</h5>
+                            <p>Quy trình chế biến vệ sinh</p>
+                        </div>
+                        
+                        <div class="why-item">
+                            <div class="why-icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <h5>Giao hàng nhanh</h5>
+                            <p>Giao tận nơi trong vòng 60 phút</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Block: About Us -->
+                <div class="about-us-block" id="about">
+                    <h3 class="about-title">Về GreenSoup</h3>
+                    <p class="about-text">
+                        GreenSoup ra đời với mong muốn mang đến những bữa ăn lành mạnh, tiện lợi và ngon miệng từ thiên nhiên. Chúng tôi tin rằng một bát súp nhỏ có thể tạo nên một thay đổi lớn cho sức khỏe và cuộc sống của bạn.
+                    </p>
+                    <a href="#about" class="btn btn-secondary btn-about-more">
+                        <i class="fa-solid fa-circle-info"></i> Xem thêm
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER COPYRIGHT -->
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 GreenSoup. Tất cả các quyền được bảo lưu. Thiết kế bởi Antigravity.</p>
+        </div>
+    </footer>
+
+    <!-- MOBILE NAVIGATION MENU -->
+    <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+    <div class="mobile-nav-panel" id="mobile-panel">
+        <div class="mobile-panel-header">
+            <div class="mobile-logo">
+                <img src="images/logo.png" alt="GreenSoup Logo">
+                <span>GreenSoup</span>
+            </div>
+            <button class="mobile-menu-close" id="mobile-close" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#" class="mobile-nav-link active">Trang chủ</a></li>
+            <li><a href="#about" class="mobile-nav-link">Giới thiệu</a></li>
+            <li><a href="#products" class="mobile-nav-link">Sản phẩm</a></li>
+            <li><a href="#combos" class="mobile-nav-link">Combo & Ưu đãi</a></li>
+            <li><a href="#news" class="mobile-nav-link">Tin tức</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Liên hệ</a></li>
+        </ul>
+        <div class="mobile-panel-footer">
+            <a href="tel:0901234567" class="mobile-phone-btn">
+                <i class="fa-solid fa-phone"></i> 0901 234 567
+            </a>
+        </div>
+    </div>
+
+    <!-- CART SIDE DRAWER -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>Giỏ hàng của bạn</h3>
+            <button class="cart-drawer-close" id="cart-close" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cart-drawer-body" id="cart-items-container">
+            <!-- Dynamic Cart Items go here -->
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-total-row">
+                <span>Tổng cộng:</span>
+                <span class="cart-total-price" id="cart-total-price">70.000đ</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkout-trigger">
+                <i class="fa-solid fa-credit-card"></i> Tiến hành thanh toán
+            </button>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="checkout-overlay" id="checkout-overlay"></div>
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-header">
+            <h3>Thông tin thanh toán</h3>
+            <button class="checkout-close" id="checkout-close" aria-label="Close Checkout">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="checkout-body">
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name">Họ và tên *</label>
+                    <input type="text" id="customer-name" required placeholder="Ví dụ: Nguyễn Văn A">
+                </div>
+                <div class="form-group">
+                    <label for="customer-phone">Số điện thoại *</label>
+                    <input type="tel" id="customer-phone" required placeholder="Ví dụ: 0901234567">
+                </div>
+                <div class="form-group">
+                    <label for="customer-address">Địa chỉ giao hàng *</label>
+                    <input type="text" id="customer-address" required placeholder="Số nhà, tên đường, phường/xã, quận/huyện">
+                </div>
+                
+                <div class="payment-methods">
+                    <label>Phương thức thanh toán *</label>
+                    <div class="payment-options">
+                        <label class="payment-option active">
+                            <input type="radio" name="payment-method" value="qr" checked>
+                            <span class="option-icon"><i class="fa-solid fa-qrcode"></i></span>
+                            <span class="option-text">Chuyển khoản QR</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment-method" value="cod">
+                            <span class="option-icon"><i class="fa-solid fa-truck-ramp-box"></i></span>
+                            <span class="option-text">Thanh toán khi nhận hàng (COD)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Dynamic QR Code Area -->
+                <div class="qr-payment-area" id="qr-payment-area">
+                    <p class="qr-instruction">Quét mã QR dưới đây để thanh toán nhanh qua ứng dụng Ngân hàng (VietQR):</p>
+                    <div class="qr-code-wrapper">
+                        <img src="" alt="VietQR Code" id="vietqr-img">
+                    </div>
+                    <div class="qr-details">
+                        <p><strong>Ngân hàng:</strong> VietinBank</p>
+                        <p><strong>Số tài khoản:</strong> 102873491299</p>
+                        <p><strong>Chủ tài khoản:</strong> NGUYEN VAN A</p>
+                        <p><strong>Số tiền:</strong> <span id="qr-amount-text">0đ</span></p>
+                        <p><strong>Nội dung CK:</strong> <span id="qr-desc-text">GREENSOUPS</span></p>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-order-btn" id="submit-order-btn">
+                    <i class="fa-solid fa-circle-check"></i> Xác nhận đặt hàng
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toast-notif">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Đã thêm sản phẩm vào giỏ hàng!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
